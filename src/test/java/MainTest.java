@@ -32,7 +32,7 @@ public class MainTest {
 
             }
         };
-        troll = new org.example.rpg.Monster("Shrek", 1000, 100.0);
+        troll = new org.example.rpg.Monster();
     }
 
     @DisplayName("Subclasslar Superclass değişkenlerinin değerlerine ulaşabiliyor mu?")

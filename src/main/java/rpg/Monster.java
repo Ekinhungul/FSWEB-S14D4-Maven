@@ -6,7 +6,7 @@ public class Monster {
     private int hitPoints;
     private double damage;
 
-    public Monster(String name, int hitPoints, double damage) {
+    public Monster() {
         this.name = name;
         this.hitPoints = hitPoints;
         this.damage = damage;
@@ -27,8 +27,8 @@ public class Monster {
     public double attack() {
         double totalDamage = getDamage();
 
-        if (this instanceof Bleedable) {
-            totalDamage += ((Bleedable) this).bleed();
+        if (this instanceof org.example.rpg.Bleedable) {
+            totalDamage += ((org.example.rpg.Bleedable) this).bleed();
         }
 
         if (this instanceof Poisonable) {
